@@ -58,3 +58,33 @@ The notebook may include the following analyses, depending on which columns are 
 12. Correlation heatmap and pairplot for numerical variables
 13. Violin plots and boxplots to examine distributions and potential outliers
 Repository Structure
+Reported Metrics
+The following figures were reported during the current analysis. Recalculate and verify them against the final dataset before submitting or publishing the repository.
+Metric	Reported value
+Total Sales	1,064,046.0419
+Total Profit	120,000.7178
+Total Quantity Sold	17,407
+Average Discount	0.1566863 (approximately 15.67%)
+Profit Margin	Approximately 11.28%
+
+
+Profit margin is calculated as total profit divided by total sales, multiplied by 100. These metrics describe the values in the analyzed file and may differ from other versions of the Superstore dataset.
+Data Quality Notes
+- Verify that Sales, Profit, Quantity, and Discount contain real source values.
+- Adding an empty column does not restore missing information.
+- Do not replace unknown values with zero or random numbers unless the data meaning justifies that treatment.
+- Inspect invalid or missing dates before calculating monthly trends or shipping duration.
+- Investigate outliers instead of automatically deleting them.
+- Treat correlations as associations; correlation alone does not establish causation.
+- Base business conclusions on outputs from the complete, verified dataset.
+Recommendations
+Use the completed analysis to investigate the following opportunities:
+- Maintain availability for products and categories with strong sales demand.
+- Compare profit as well as sales when evaluating product and regional performance.
+- Review discount policies if higher discounts coincide with lower profit.
+- Investigate products that show repeated or substantial losses.
+- Use monthly trends to support inventory and promotional planning.
+- Improve data quality checks so that business reporting is reliable.
+These are general recommendations. Prioritize them only when the project's actual outputs support them.
+Conclusion
+This project demonstrates how Python can be used to inspect, clean, summarize, and visualize retail sales data. The analysis explores patterns across product categories, regions, customer segments, sales trends, and numerical variables. The resulting findings can support further investigation into profitability, discounts, product performance, and shipping operations.
